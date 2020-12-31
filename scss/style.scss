@@ -1,0 +1,139 @@
+@import "mixin.scss";
+header {
+    display: flex;
+    text-align: left;
+    align-items: left;
+    background: rgb(215, 215, 255);
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+body {
+    background: black;
+    text-align: justify;
+    margin: 40px;
+    padding: 50px;
+}
+
+.row {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    padding-left: 10%;
+}
+
+.segundo {
+    // background: blue;
+    margin-top: 800px;
+    color: black;
+}
+
+video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+    border: bisque 3px solid;
+    margin-top: 30rem;
+}
+
+.container {
+    background: blanchedalmond;
+    text-align: justify;
+    color: blue;
+    @include breakpoint(1550px) {
+        background: green;
+        // font-size: 4rem;
+    }
+    @include breakpoint(1000px) {
+        background: palegoldenrod;
+        // font-size: 20px;
+        color: black;
+    }
+    @include breakpoint(600px) {
+        background: wheat;
+        color: black;
+        // font-size: 10px;
+    }
+}
+
+.child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    padding: 20px;
+}
+
+#montaña {
+    display: flex;
+    align-items: center;
+    // border: 2px wheat solid;
+    width: 70%;
+    height: auto;
+    position: absolute;
+    margin-top: 12rem;
+}
+
+#bici {
+    position: absolute;
+    align-items: center;
+    width: 70%;
+    height: auto;
+    margin-top: 12rem;
+    right: 150px;
+    bottom: -600px;
+}
+
+//aca van las redes sociales solamente//
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: blanchedalmond;
+    ;
+    // position: absolute;
+    align-items: center;
+    // top: 1100px;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    // left: 0;
+    // right: 002px;
+    // padding-top: 10px;
+    // flex-flow: column-wrap;
+    // padding: 20px;
+    // margin-left: 2%;
+    @include breakpoint(600px) {
+        // #borrar {
+        //     display: none;
+        // }
+        // .redes {
+        //     justify-content: center;
+        //     align-content: center;
+        //     align-items: center;
+        // }
+    }
+}
+
+.inline-photo {
+    border: 1em solid #fff;
+    border-bottom: 4em solid #fff;
+    border-radius: .25em;
+    box-shadow: 1em 1em 2em .25em rgba(0, 0, 0, .2);
+    margin: 2em auto;
+    opacity: 0;
+    transform: translateY(4em) rotateZ(-5deg);
+    transition: transform 4s .25s cubic-bezier(0, 1, .3, 1), opacity .3s 10s ease-out;
+    max-width: 600px;
+    width: 90%;
+    will-change: transform, opacity;
+}
+
+.inline-photo.is-visible {
+    opacity: 1;
+    transform: rotateZ(-2deg);
+}
+
+//BORRAR DESDE ACA //

@@ -1,0 +1,100 @@
+@charset "UTF-8";
+header {
+  display: flex;
+  text-align: left;
+  align-items: left;
+  background: #d7d7ff;
+  padding: 20px;
+  margin-bottom: 50px; }
+
+body {
+  background: black;
+  text-align: justify;
+  margin: 40px;
+  padding: 50px; }
+
+.row {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  padding-left: 10%; }
+
+.segundo {
+  margin-top: 800px;
+  color: black; }
+
+video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  height: auto;
+  border: bisque 3px solid;
+  margin-top: 30rem; }
+
+.container {
+  background: blanchedalmond;
+  text-align: justify;
+  color: blue; }
+  @media screen and (max-width: 1550px) {
+    .container {
+      background: green; } }
+  @media screen and (max-width: 1000px) {
+    .container {
+      background: palegoldenrod;
+      color: black; } }
+  @media screen and (max-width: 600px) {
+    .container {
+      background: wheat;
+      color: black; } }
+
+.child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  padding: 20px; }
+
+#montaña {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  height: auto;
+  position: absolute;
+  margin-top: 12rem; }
+
+#bici {
+  position: absolute;
+  align-items: center;
+  width: 70%;
+  height: auto;
+  margin-top: 12rem;
+  right: 150px;
+  bottom: -600px; }
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: blanchedalmond;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%; }
+
+.inline-photo {
+  border: 1em solid #fff;
+  border-bottom: 4em solid #fff;
+  border-radius: .25em;
+  box-shadow: 1em 1em 2em 0.25em rgba(0, 0, 0, 0.2);
+  margin: 2em auto;
+  opacity: 0;
+  transform: translateY(4em) rotateZ(-5deg);
+  transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.3s 10s ease-out;
+  max-width: 600px;
+  width: 90%;
+  will-change: transform, opacity; }
+
+.inline-photo.is-visible {
+  opacity: 1;
+  transform: rotateZ(-2deg); }
